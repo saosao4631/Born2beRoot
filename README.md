@@ -13,6 +13,15 @@ https://www.virtualbox.org/wiki/Downloads
 NAME="Ubuntu"
 
 ◦ Debian vs Rocky Linux
+→オープンソースのLinuxディストリビューションの種類(Linuxの種類)
+Debianの方が設定が簡単。
+
+| | 系列 | 命令 |
+| --- | --- | --- |
+| Debian | Debian(Ubuntu) |
+| Rocky Linux | Red Hat（RPM） |  |
+
+
 ◦ AppArmor vs SELinux
 ◦ UFW vs firewalld
 
@@ -22,10 +31,10 @@ NAME="Ubuntu"
 →仮想化ソフト
 仮想環境を作成できる
 
-| | CPU | 命令 |
-| --- | --- | --- |
-| Windows/Linux | Intel/AMD | x86_64 |
-| Mac M1/M2/M3 | Apple Silicon | ARM |
+|| OS | CPU | 命令 |
+| --- | --- | --- | --- |
+| VirtualBox | Windows/Linux | Intel/AMD | x86_64 |
+| UTM | Mac M1/M2/M3 | Apple Silicon | ARM |
 
 https://qiita.com/RanmaRanma/items/d708d42674928ccc3e42
 
@@ -36,6 +45,13 @@ UTMはARM上でも動くように作られているので、Mac M1でも使え�
 今回はlinuxで環境構築のためVirtualBox
 
 ---
+|| Debian | Rocky Linux |
+| --- | --- | --- |
+|| AppArmor | SELinux |
+| セキュリティモジュール | UFW | firewalld |
+| 仮想化ソフト | VirtualBox | UTM |
+
+
 
 
 https://zenn.dev/kodyi/articles/1440a8e2ee0f8b
