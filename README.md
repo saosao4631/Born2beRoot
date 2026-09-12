@@ -110,18 +110,10 @@ sudo crontab -e
 sudo systemctl start cron
 ```
  
+ # VMコピー
+ VBoxManage internalcommands sethduuid 
 ---
  
-## Project description
- 
-### OS の選択：Debian
- 
-課題では Debian と Rocky Linux から選択できるが、以下の理由で Debian を選んだ。
- 
-- 課題文が、システム管理の初学者には Debian を強く推奨している
-- SELinux より AppArmor のほうが設定が単純で、限られた時間で「なぜそう設定したか」まで理解できる見込みが立った
-- ホスト環境が Linux であり、`apt` 系の操作に馴染みがあった
-- 日本語・英語ともに参照できる情報が多く、詰まったときに自力で調べ切れる
 ### パーティション設計
  
 必須要件である「LVM を用いた暗号化パーティションを 2 つ以上」を満たす構成にした。
